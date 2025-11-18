@@ -28,7 +28,7 @@ body {
    Header & Navigation
    =========================== */
 header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #2c5f2d 0%, #3d8b40 100%);
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -88,7 +88,7 @@ nav {
    Hero Section
    =========================== */
 .hero {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #2c5f2d 0%, #3d8b40 100%);
     color: white;
     padding: 150px 2rem 100px;
     margin-top: 70px;
@@ -134,7 +134,7 @@ nav {
     margin-top: 1rem;
     padding: 15px 40px;
     background: white;
-    color: #1e3c72;
+    color: #2c5f2d;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
@@ -158,10 +158,10 @@ nav {
 
 .section-title {
     font-size: 2rem;
-    color: #1e3c72;
+    color: #2c5f2d;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 3px solid #2a5298;
+    border-bottom: 3px solid #3d8b40;
 }
 
 .section-subtitle {
@@ -177,7 +177,7 @@ nav {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
-    border-left: 4px solid #2a5298;
+    border-left: 4px solid #3d8b40;
 }
 
 .intro-text {
@@ -199,7 +199,7 @@ nav {
 
 .info-label {
     font-weight: bold;
-    color: #1e3c72;
+    color: #2c5f2d;
     min-width: 150px;
 }
 
@@ -215,15 +215,15 @@ nav {
 }
 
 .scope-intro {
-    background: linear-gradient(135deg, #e3f2fd 0%, #f5f5f5 100%);
+    background: linear-gradient(135deg, #e8f5e9 0%, #f5f5f5 100%);
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
-    border-left: 4px solid #2a5298;
+    border-left: 4px solid #3d8b40;
 }
 
 .scope-intro h3 {
-    color: #1e3c72;
+    color: #2c5f2d;
     margin-bottom: 1rem;
 }
 
@@ -232,63 +232,29 @@ nav {
     line-height: 1.8;
 }
 
-.scope-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.scope-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-top: 3px solid #2a5298;
-}
-
-.scope-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.scope-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.business-highlight {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    padding: 3rem 2rem;
+    border-radius: 15px;
     text-align: center;
+    margin: 2rem 0;
+    border: 2px solid #3d8b40;
 }
 
-.scope-card h3 {
-    color: #1e3c72;
+.business-icon {
+    font-size: 5rem;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
-    text-align: center;
 }
 
-.scope-card p {
-    color: #666;
+.business-highlight h3 {
+    color: #2c5f2d;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
-    font-size: 0.95rem;
 }
 
-.scope-list {
-    list-style: none;
-    margin-top: 1rem;
-}
-
-.scope-list li {
-    padding: 0.5rem 0;
+.business-highlight p {
     color: #555;
-    font-size: 0.9rem;
-}
-
-.scope-list li:before {
-    content: "✓";
-    color: #2a5298;
-    font-weight: bold;
-    margin-right: 0.5rem;
+    font-size: 1.1rem;
 }
 
 /* ===========================
@@ -296,6 +262,20 @@ nav {
    =========================== */
 .products-section {
     background: #f8f9fa;
+}
+
+.products-intro {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #3d8b40;
+}
+
+.products-intro p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 .products-grid {
@@ -309,13 +289,14 @@ nav {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
-    border-top: 3px solid #2a5298;
+    border-top: 3px solid #3d8b40;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .product-icon {
@@ -325,7 +306,7 @@ nav {
 }
 
 .product-card h3 {
-    color: #1e3c72;
+    color: #2c5f2d;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.1rem;
@@ -346,11 +327,18 @@ nav {
     border-bottom: none;
 }
 
+.product-list li:before {
+    content: "•";
+    color: #3d8b40;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
 /* ===========================
    Contact Section
    =========================== */
 .contact-section {
-    background: linear-gradient(135deg, #e3f2fd 0%, #f5f5f5 100%);
+    background: linear-gradient(135deg, #e8f5e9 0%, #f5f5f5 100%);
 }
 
 .contact-grid {
@@ -370,7 +358,7 @@ nav {
 
 .contact-info h3,
 .contact-form h3 {
-    color: #1e3c72;
+    color: #2c5f2d;
     margin-bottom: 1.5rem;
 }
 
@@ -385,7 +373,7 @@ nav {
 
 .contact-label {
     font-weight: bold;
-    color: #1e3c72;
+    color: #2c5f2d;
     margin-bottom: 0.5rem;
 }
 
@@ -419,7 +407,7 @@ nav {
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #2a5298;
+    border-color: #3d8b40;
 }
 
 .form-group textarea {
@@ -428,7 +416,7 @@ nav {
 }
 
 .submit-btn {
-    background: #2a5298;
+    background: #3d8b40;
     color: white;
     padding: 12px 40px;
     border: none;
@@ -440,7 +428,7 @@ nav {
 }
 
 .submit-btn:hover {
-    background: #1e3c72;
+    background: #2c5f2d;
     transform: translateY(-2px);
 }
 
@@ -448,15 +436,15 @@ nav {
    Notice Box
    =========================== */
 .notice-box {
-    background: #e8f5e9;
+    background: #fff9c4;
     padding: 1.5rem;
     border-radius: 10px;
-    border-left: 4px solid #4caf50;
+    border-left: 4px solid #f9a825;
     margin: 2rem 0;
 }
 
 .notice-box h4 {
-    color: #2e7d32;
+    color: #f57c00;
     margin-bottom: 0.5rem;
 }
 
@@ -525,7 +513,7 @@ footer {
     right: 30px;
     width: 50px;
     height: 50px;
-    background: #2a5298;
+    background: #3d8b40;
     color: white;
     border: none;
     border-radius: 50%;
@@ -543,7 +531,7 @@ footer {
 }
 
 .back-to-top:hover {
-    background: #1e3c72;
+    background: #2c5f2d;
     transform: translateY(-5px);
 }
 
@@ -571,7 +559,6 @@ footer {
 }
 
 @media (max-width: 992px) {
-    .scope-cards,
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -604,7 +591,6 @@ footer {
 
     .info-grid,
     .contact-grid,
-    .scope-cards,
     .products-grid {
         grid-template-columns: 1fr;
     }
