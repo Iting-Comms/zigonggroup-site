@@ -232,6 +232,44 @@ nav {
     line-height: 1.8;
 }
 
+.scope-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.scope-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 3px solid #3d8b40;
+    text-align: center;
+}
+
+.scope-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.scope-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.scope-card h3 {
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.scope-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
 .business-highlight {
     background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
     padding: 3rem 2rem;
